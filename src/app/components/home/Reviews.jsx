@@ -7,19 +7,18 @@ const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export default function Reviews() {
   return (
-    <section className="p-16 h-[120vh] flex">
-      <div className="h-[90%] w-[30%] flex flex-col justify-evenly">
+    <section className="p-16 h-[120vh] flex mb-32">
+      <div className="h-[90%] w-[30%] flex flex-col justify-between">
         <h2
           className={`${playfair.className} capitalize text-[3rem] leading-[60px]`}
         >
           Our happy and thriving students
         </h2>
-        <p className="text-justify">
+        <p className="text-lg">
           Reviews that speak nothing but honest spiritual experience. Lorem,
-          ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit
-          blanditiis.
+          ipsum dolor sit amet consectetur adipisicing elit.
         </p>
-        <Button className="py-4 self-start px-16 rounded-md">
+        <Button className="py-4 self-start px-16 rounded-md mt-5">
           All Reviews
         </Button>
       </div>

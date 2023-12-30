@@ -30,12 +30,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link href="/" className="hover:text-secondary">
-                Yoga
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="hover:text-secondary">
-                Diet
+                Courses
               </Link>
             </li>
             <li>
@@ -49,7 +44,7 @@ const Navbar = () => {
               </Link>
             </li>
             <Button className="p-4 px-16 rounded-md self-start">
-              Subscribe
+              Get Started
             </Button>
           </ul>
         </div>

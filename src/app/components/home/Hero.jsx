@@ -37,14 +37,14 @@ export default function Hero() {
           fill
           className="object-cover rounded-sm z-40"
         />
-        <div className="absolute top-[40%] left-[40%] bg-secondary h-[90px] w-[90px] rounded-[50%] z-50 hover:bg-primary">
+        <Button className="absolute top-[40%] left-[40%] h-[90px] w-[90px] rounded-[50%] z-50">
           <FaPlay
             className="text-[40px] absolute left-[30%] top-[30%] hover:text-white"
             color="white"
             fill="white"
           />
-        </div>
-        <div className="h-[90%] w-[90%] bg-gray-300 absolute top-[70px] right-[70px] z-1 rounded-sm"></div>
+        </Button>
+        <div className="h-full w-full bg-gray-300 absolute top-[40px] right-[40px] z-1 rounded-sm bg-opacity-50"></div>
       </div>
     </section>
   );
