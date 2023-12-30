@@ -3,7 +3,7 @@ import Newsletter from "./Newsletter";
 
 export default function Footer() {
   return (
-    <section>
+    <section className="bg-tertiary">
       <Newsletter />
       <footer className="flex justify-between border-t border-gray-300 p-10">
         <p>Copyright &copy; Yin & Yang Meditation</p>

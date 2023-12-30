@@ -1,6 +1,7 @@
 import { Poppins, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/footer/Footer";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <main>
           <Navbar />
           {children}
+          <Footer />
         </main>
       </body>
     </html>

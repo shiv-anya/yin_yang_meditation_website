@@ -13,7 +13,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export default function Newsletter() {
   return (
-    <section className="h-[40vh] my-32 flex flex-col items-center justify-evenly">
+    <section className="h-[85vh] py-36 flex flex-col items-center justify-evenly">
       <h2 className={`${playfair.className} text-[3rem] capitalize`}>
         Subscribe to newsletter
       </h2>
@@ -22,7 +22,8 @@ export default function Newsletter() {
       </p>
       <div className="w-full flex justify-center mt-10">
         <input
-          type="text"
+          required
+          type="email"
           placeholder="Email address"
           className="p-4 w-[50%] rounded-md outline-none border-transparent focus:border-transparent focus:ring-0"
         />

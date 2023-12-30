@@ -24,18 +24,23 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/" className="hover:text-secondary">
+              <Link href="/blogs" className="hover:text-secondary">
                 Blogs
               </Link>
             </li>
             <li>
               <Link href="/" className="hover:text-secondary">
-                Courses
+                Yoga
               </Link>
             </li>
             <li>
               <Link href="/" className="hover:text-secondary">
-                About
+                Diet
+              </Link>
+            </li>
+            <li>
+              <Link href="/" className="hover:text-secondary">
+                About Us
               </Link>
             </li>
             <li>

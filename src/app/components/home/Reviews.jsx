@@ -7,7 +7,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export default function Reviews() {
   return (
-    <section className="p-16 h-[120vh] flex mb-32">
+    <section className="p-16 h-[120vh] flex pb-32">
       <div className="h-[90%] w-[30%] flex flex-col justify-between">
         <h2
           className={`${playfair.className} capitalize text-[3rem] leading-[60px]`}
