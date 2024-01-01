@@ -10,7 +10,7 @@ const Page = () => {
       <div className="w-[90%] mx-auto flex">
         <div className="flex-1 border-r-2 border-r-gray-300 p-10">
           <h2
-            className={`${playfair.className} text-[3rem] text-center capitalize mb-10`}
+            className={`${playfair.className} leading-[60px] text-[3rem] text-center capitalize mb-10`}
           >
             Want a demo class? Visit Us!
           </h2>
@@ -26,7 +26,7 @@ const Page = () => {
         </div>
         <div className="flex-1 flex flex-col p-10">
           <h2
-            className={`${playfair.className} text-[3rem] capitalize text-center mb-10`}
+            className={`${playfair.className} leading-[60px] text-[3rem] capitalize text-center mb-10`}
           >
             Any Doubt? Contact us!
           </h2>

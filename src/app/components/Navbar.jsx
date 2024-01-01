@@ -39,7 +39,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/" className="hover:text-secondary">
+              <Link href="/about" className="hover:text-secondary">
                 About Us
               </Link>
             </li>
