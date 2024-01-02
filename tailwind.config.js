@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        card: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+      },
       animation: {
         "spin-slow": "spin 5s linear infinite",
       },
@@ -14,6 +17,7 @@ module.exports = {
         primary: "#2e8b57",
         secondary: "#3cb371",
         tertiary: "#f3f3f3",
+        overlay: "rgb(0,0,0,0.8)",
       },
     },
   },
