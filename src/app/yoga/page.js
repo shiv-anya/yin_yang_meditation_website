@@ -29,6 +29,7 @@ const Page = () => {
       data={data}
       content={content}
       src="/yoga_course.jpg"
+      type="yoga"
     />
   );
 };

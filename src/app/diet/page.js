@@ -30,6 +30,7 @@ const Page = () => {
       data={data}
       content={content}
       src="/diet.jpg"
+      type="diet"
     />
   );
 };
