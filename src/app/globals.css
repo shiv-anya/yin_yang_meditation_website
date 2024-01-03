@@ -8,3 +8,16 @@
   box-sizing: border-box;
   color: #333;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3cb371; /* Green color */
+  border-radius: 6px; /* Rounded corners */
+}
