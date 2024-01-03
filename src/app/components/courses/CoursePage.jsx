@@ -7,14 +7,11 @@ import CourseContent from "./CourseContent";
 
 const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
-export default function CoursePage({ data, content, src }) {
+export default function CoursePage({ data, content, src, title }) {
   return (
     <div className="bg-tertiary py-16">
       <div className="w-[90%] mx-auto bg-white rounded-md">
-        <ParallaxHeading
-          title="Embark on a Journey to Wellness with Our Yoga Courses"
-          src={src}
-        />
+        <ParallaxHeading title={title} src={src} />
         <div className="px-10">
           <h2 className={`${playfair.className} text-[3rem] my-5`}>
             Course description

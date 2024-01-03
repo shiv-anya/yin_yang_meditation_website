@@ -68,8 +68,8 @@ export default function BuyCourseCard() {
         {current === "teams" && (
           <div>
             <p>
-              Subscribe to this course and 25,000+ top‑rated Udemy courses for
-              your organization.
+              Subscribe to this course and 25,000+ top‑rated meditation courses
+              for your organization.
             </p>
             <Button className="py-4 px-16 w-full my-5">Buy this Course</Button>
             <ul>

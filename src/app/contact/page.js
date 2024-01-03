@@ -6,7 +6,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 const Page = () => {
   return (
-    <section className="h-[130vh] bg-tertiary pt-24 pb-32">
+    <section className="h-auto bg-tertiary pt-24 pb-24">
       <div className="w-[90%] mx-auto flex">
         <div className="flex-1 border-r-2 border-r-gray-300 p-10">
           <h2
@@ -45,7 +45,7 @@ const Page = () => {
             />
             <textarea
               placeholder="Enter any suggestions or doubts"
-              className="p-4 w-full rounded-md outline-none border-transparent focus:border-transparent focus:ring-0 mt-5"
+              className="p-4 w-full rounded-md outline-none border-transparent focus:border-transparent focus:ring-0 mt-5 h-[200px] overflow-scroll resize-none"
             />
             <Button className="px-16 py-4 rounded-md mt-5">Submit</Button>
           </form>

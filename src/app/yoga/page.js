@@ -23,7 +23,14 @@ const data = [
 ];
 
 const Page = () => {
-  return <CoursePage data={data} content={content} src="/yoga_course.jpg" />;
+  return (
+    <CoursePage
+      title="Embark on a Journey to Wellness with Our Yoga Courses"
+      data={data}
+      content={content}
+      src="/yoga_course.jpg"
+    />
+  );
 };
 
 export default Page;

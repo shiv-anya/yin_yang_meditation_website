@@ -1,8 +1,16 @@
 import { Playfair_Display_SC } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import Button from "./Button";
+import NavbarLinks from "./NavbarLinks";
+
+const links = [
+  { path: "/", title: "Home" },
+  { path: "/blogs", title: "Blogs" },
+  { path: "/yoga", title: "Yoga" },
+  { path: "/diet", title: "Diet" },
+  { path: "/about", title: "About" },
+  { path: "/contact", title: "Contact" },
+];
 
 const playfair_display = Playfair_Display_SC({
   subsets: ["latin"],
@@ -17,41 +25,7 @@ const Navbar = () => {
           <Image fill src="/yin_circle.png" alt="logo" />
         </div>
         <div className="w-[60%]">
-          <ul className="flex justify-between items-center">
-            <li>
-              <Link href="/" className="hover:text-secondary">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/blogs" className="hover:text-secondary">
-                Blogs
-              </Link>
-            </li>
-            <li>
-              <Link href="/yoga" className="hover:text-secondary">
-                Yoga
-              </Link>
-            </li>
-            <li>
-              <Link href="/diet" className="hover:text-secondary">
-                Diet
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="hover:text-secondary">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="hover:text-secondary">
-                Contact
-              </Link>
-            </li>
-            <Button className="p-4 px-16 rounded-md self-start">
-              Get Started
-            </Button>
-          </ul>
+          <NavbarLinks links={links} />
         </div>
       </nav>
     </header>

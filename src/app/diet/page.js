@@ -24,7 +24,14 @@ const content = [
 ];
 
 const Page = () => {
-  return <CoursePage data={data} content={content} src="/diet.jpg" />;
+  return (
+    <CoursePage
+      title="Revitalize Your Plate: A Holistic Approach to Healthy Living"
+      data={data}
+      content={content}
+      src="/diet.jpg"
+    />
+  );
 };
 
 export default Page;

@@ -7,7 +7,6 @@ import { Playfair_Display } from "next/font/google";
 const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 const PageTurnAnimation = ({ name, src }) => {
-  console.log(src);
   const [text, setText] = useState("");
   const textRef = useRef();
   const headingRef = useRef();
