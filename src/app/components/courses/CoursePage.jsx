@@ -7,7 +7,7 @@ import CourseContent from "./CourseContent";
 
 const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
-export default function CoursePage({ data, content, src, title }) {
+export default function CoursePage({ data, content, src, title, type }) {
   return (
     <div className="bg-tertiary py-16">
       <div className="w-[90%] mx-auto bg-white rounded-md">
@@ -38,7 +38,7 @@ export default function CoursePage({ data, content, src, title }) {
           </div>
         </div>
         <div>
-          <CourseContent data={content} />
+          <CourseContent data={content} type={type} />
         </div>
       </div>
     </div>
