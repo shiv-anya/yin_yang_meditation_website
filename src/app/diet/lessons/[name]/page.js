@@ -13,6 +13,11 @@ const links = [
   "Equilibrium Eats: Mastering the Balanced Diet",
 ];
 
+export const metadata = {
+  title: "Yin & Yang | Meditation and Wellness",
+  description: "",
+};
+
 const Page = ({ params }) => {
   return (
     <section className="flex">
