@@ -6,11 +6,13 @@ const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export default function Featured() {
   return (
-    <section className="py-32">
-      <h2 className={`${playfair.className} text-[3rem] mb-16 text-center`}>
+    <section className="py-32 max-lg:pt-16 max-lg:pb-20">
+      <h2
+        className={`${playfair.className} text-[3rem] mb-16 text-center max-sm:text-[2.4rem] max-sm:mb-8`}
+      >
         Featured In
       </h2>
-      <div className="flex justify-evenly">
+      <div className="flex justify-evenly max-lg:flex-wrap max-lg:w-[90%] max-lg:gap-5 max-lg:mx-auto">
         <Image
           width={200}
           height={80}

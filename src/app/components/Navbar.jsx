@@ -20,13 +20,14 @@ const playfair_display = Playfair_Display_SC({
 const Navbar = () => {
   return (
     <header>
-      <nav className="h-[25vh] p-10 flex justify-between items-center">
-        <div className="h-[100px] relative w-[100px]">
+      <nav className="h-[25vh] p-10 flex justify-between items-center max-sm:h-[10vh] max-sm:p-5">
+        <div className="h-[100px] relative w-[100px] max-sm:h-[50px] max-sm:w-[50px]">
           <Image fill src="/yin_circle.png" alt="logo" />
         </div>
-        <div className="w-[60%]">
+        <div className="w-[60%] max-lg:hidden">
           <NavbarLinks links={links} />
         </div>
+        <div className="lg:hidden max-lg:visible">Chotu Navbar</div>
       </nav>
     </header>
   );
