@@ -22,6 +22,11 @@ const data = [
   "Nourishing Body, Mind, and Soul",
 ];
 
+export const metadata = {
+  title: "Yin & Yang | Meditation and Wellness",
+  description: "",
+};
+
 const Page = () => {
   return (
     <CoursePage

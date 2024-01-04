@@ -4,6 +4,11 @@ import Button from "../components/Button";
 
 const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
+export const metadata = {
+  title: "Yin & Yang | Meditation and Wellness",
+  description: "",
+};
+
 const Page = () => {
   return (
     <section className="h-auto bg-tertiary pt-24 pb-24">

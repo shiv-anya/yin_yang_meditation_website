@@ -5,6 +5,11 @@ import { Playfair_Display } from "next/font/google";
 
 const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
+export const metadata = {
+  title: "Yin & Yang | Meditation and Wellness",
+  description: "",
+};
+
 const Card = ({ title, src }) => {
   return (
     <article className="bg-white flex h-[90vh] rounded-lg odd:flex-row-reverse">

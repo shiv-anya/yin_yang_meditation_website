@@ -5,6 +5,11 @@ import PageTurnAnimation from "../components/about/Card";
 
 const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
+export const metadata = {
+  title: "Yin & Yang | Meditation and Wellness",
+  description: "",
+};
+
 const Page = () => {
   return (
     <section className="py-16 bg-tertiary">
