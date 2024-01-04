@@ -1,15 +1,20 @@
 "use client";
 
+import { Playfair_Display } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+
+const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export default function SideBar({ links, title, type }) {
   const pathname = usePathname();
   return (
     <aside className="w-[25vw] h-[100vh] border-r border-gray-300 sticky top-0 left-0">
       <nav>
-        <h2 className="text-[1.7rem] px-2 py-5 bg-secondary text-white">
+        <h2
+          className={`${playfair.className} text-[1.7rem] px-2 py-5 bg-secondary text-white`}
+        >
           {title}
         </h2>
         <ul className="h-[70vh] overflow-scroll">
