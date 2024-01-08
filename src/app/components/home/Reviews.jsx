@@ -1,16 +1,13 @@
-import { Playfair_Display } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 import Button from "../Button";
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export default function Reviews() {
   return (
     <section className="p-16 h-[120vh] flex pb-32 max-sm:flex-col max-sm:p-0 max-sm:flex-col-reverse max-sm:p-0 max-sm:h-[80vh] max-sm:mt-[-250px]">
       <div className="h-[90%] w-[30%] flex flex-col justify-between max-sm:w-[90%] max-sm:mx-auto max-sm:h-[25%]">
         <h2
-          className={`${playfair.className} capitalize text-[3rem] leading-[60px] max-sm:text-[2.4rem] max-sm:leading-[40px]`}
+          className={`capitalize text-[3rem] leading-[60px] max-sm:text-[2.4rem] max-sm:leading-[40px]`}
         >
           Our happy and thriving students
         </h2>

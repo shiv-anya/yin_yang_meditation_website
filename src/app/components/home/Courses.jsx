@@ -1,9 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import Button from "../Button";
-import { Playfair_Display } from "next/font/google";
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 function Card({ title, src }) {
   return (
@@ -12,9 +9,7 @@ function Card({ title, src }) {
         <Image fill src={src} alt="yoga images" className="object-cover" />
       </div>
       <div className="w-full">
-        <h3 className={`${playfair.className} text-[1.7rem] mt-3 mb-2`}>
-          {title}
-        </h3>
+        <h3 className={`text-[1.7rem] mt-3 mb-2`}>{title}</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
           distinctio.
@@ -29,7 +24,7 @@ export default function Courses() {
     <section className="mb-24">
       <div className="h-full mb-16 ml-16 max-sm:ml-0">
         <h2
-          className={`${playfair.className} text-[3rem] leading-[60px] max-sm:text-[2.4rem] max-sm:leading-[40px] max-sm:w-[90%] max-sm:mx-auto`}
+          className={`text-[3rem] leading-[60px] max-sm:text-[2.4rem] max-sm:leading-[40px] max-sm:w-[90%] max-sm:mx-auto`}
         >
           Transformative Journeys
           <br />

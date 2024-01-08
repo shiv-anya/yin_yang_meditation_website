@@ -1,14 +1,11 @@
-import { Playfair_Display } from "next/font/google";
 import Image from "next/image";
 import React from "react";
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export default function LessonPage({ title, src }) {
   return (
     <section className="w-[75vw]">
       <div className="w-[90%] mx-auto">
-        <h2 className={`${playfair.className} text-[3rem] my-5`}>{title}</h2>
+        <h2 className={`text-[3rem] my-5`}>{title}</h2>
 
         <iframe
           width="100%"

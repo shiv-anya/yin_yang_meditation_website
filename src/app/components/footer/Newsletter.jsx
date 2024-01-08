@@ -1,22 +1,11 @@
 import React from "react";
 import Button from "../Button";
-import { Playfair_Display } from "next/font/google";
-import {
-  FaFacebook,
-  FaGoogle,
-  FaMedium,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa6";
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
+import { FaFacebook, FaGoogle, FaTwitter, FaYoutube } from "react-icons/fa6";
 
 export default function Newsletter() {
   return (
-    <section className="h-[85vh] py-36 flex flex-col items-center justify-evenly max-sm:w-[90%] max-sm:mx-auto max-sm:pb-10">
-      <h2 className={`${playfair.className} text-[3rem] capitalize`}>
-        Subscribe to newsletter
-      </h2>
+    <section className="h-[85vh] py-36 flex flex-col items-center justify-evenly max-sm:w-[90%] max-sm:mx-auto max-sm:pb-32">
+      <h2 className={`text-[3rem] capitalize`}>Subscribe to newsletter</h2>
       <p className="text-lg">
         Stay connected to serenity. Subscribe for monthly mindfulness.
       </p>

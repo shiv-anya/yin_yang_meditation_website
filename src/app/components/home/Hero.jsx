@@ -2,12 +2,6 @@ import Image from "next/image";
 import React from "react";
 import { FaPlay } from "react-icons/fa6";
 import Button from "../Button";
-import { Playfair_Display } from "next/font/google";
-
-const playfair_display = Playfair_Display({
-  subsets: ["latin"],
-  weight: "700",
-});
 
 export default function Hero() {
   return (
@@ -18,7 +12,7 @@ export default function Hero() {
           <small>On-Demand Live sessions</small>
         </div>
         <h2
-          className={`${playfair_display.className} text-[4.5rem] leading-[70px] max-sm:text-[3rem] leading-[10px]`}
+          className={`text-[4.5rem] leading-[70px] max-sm:text-[3rem] leading-[10px]`}
         >
           Find Calm Amidst Chaos: Your Guided Meditation
         </h2>

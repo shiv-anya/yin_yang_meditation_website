@@ -1,14 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import { Playfair_Display } from "next/font/google";
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export default function Featured() {
   return (
     <section className="py-32 max-lg:pt-16 max-lg:pb-20">
       <h2
-        className={`${playfair.className} text-[3rem] mb-16 text-center max-sm:text-[2.4rem] max-sm:mb-8`}
+        className={`text-[3rem] mb-16 text-center max-sm:text-[2.4rem] max-sm:mb-8`}
       >
         Featured In
       </h2>

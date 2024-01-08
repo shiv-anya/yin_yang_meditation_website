@@ -1,9 +1,6 @@
 import React from "react";
 import Button from "../components/Button";
 import Image from "next/image";
-import { Playfair_Display } from "next/font/google";
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export const metadata = {
   title: "Yin & Yang | Meditation and Wellness",
@@ -14,7 +11,7 @@ const Card = ({ title, src }) => {
   return (
     <article className="bg-white flex h-[90vh] rounded-lg odd:flex-row-reverse">
       <div className="flex-1 p-10 flex flex-col justify-between">
-        <h2 className={`${playfair.className} text-[2rem]`}>{title}</h2>
+        <h2 className={`text-[2rem]`}>{title}</h2>
         <div>
           <h3 className="text-[1.7rem]">Blog Description</h3>
           <p>
@@ -64,7 +61,7 @@ const Card = ({ title, src }) => {
 const Page = () => {
   return (
     <section className="bg-tertiary">
-      <h1 className={`${playfair.className} text-[3rem] py-16 mx-16`}>
+      <h1 className={`text-[3rem] py-16 mx-16`}>
         Explore Our Mindful Living Blogs
       </h1>
       <div>

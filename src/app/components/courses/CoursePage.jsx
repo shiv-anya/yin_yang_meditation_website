@@ -1,11 +1,8 @@
 import React from "react";
 import ParallaxHeading from "./Parallax";
-import { Playfair_Display } from "next/font/google";
 import CourseKeyConcepts from "./CourseKeyConcepts";
 import BuyCourseCard from "./BuyCourseCard";
 import CourseContent from "./CourseContent";
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export default function CoursePage({ data, content, src, title, type }) {
   return (
@@ -13,9 +10,7 @@ export default function CoursePage({ data, content, src, title, type }) {
       <div className="w-[90%] mx-auto bg-white rounded-md">
         <ParallaxHeading title={title} src={src} />
         <div className="px-10">
-          <h2 className={`${playfair.className} text-[3rem] my-5`}>
-            Course description
-          </h2>
+          <h2 className={`text-[3rem] my-5`}>Course description</h2>
           <div className="flex justify-between text-justify gap-10 border-t border-gray-300 py-10">
             <div>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.

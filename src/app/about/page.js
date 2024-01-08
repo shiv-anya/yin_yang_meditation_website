@@ -1,9 +1,6 @@
 import React from "react";
-import { Playfair_Display } from "next/font/google";
 import Image from "next/image";
 import PageTurnAnimation from "../components/about/Card";
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export const metadata = {
   title: "Yin & Yang | Meditation and Wellness",
@@ -15,9 +12,7 @@ const Page = () => {
     <section className="py-16 bg-tertiary">
       <div className="w-[90%] mx-auto flex h-[100vh]">
         <div className="flex-1 flex flex-col justify-evenly h-[80%]">
-          <h2
-            className={`${playfair.className} text-[3rem] leading-[60px] capitalize`}
-          >
+          <h2 className={`text-[3rem] leading-[60px] capitalize`}>
             Nourishing the Soul: Your Compass for Mindful Living
           </h2>
           <p className="text-[1.2rem] w-[90%]">
@@ -94,9 +89,7 @@ const Page = () => {
         </div>
       </div>
       <div className="h-[80vh] my-16">
-        <h2 className={`${playfair.className} text-[3rem] mx-16 mb-10`}>
-          Our Trainers
-        </h2>
+        <h2 className={`text-[3rem] mx-16 mb-10`}>Our Trainers</h2>
         <div className="w-[90%] mx-auto flex h-full gap-10">
           <PageTurnAnimation
             name="Isabella Thompson"

@@ -1,16 +1,10 @@
 import React from "react";
-import { Playfair_Display } from "next/font/google";
-import { data } from "autoprefixer";
 import Link from "next/link";
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export default function CourseContent({ data, type }) {
   return (
     <div className="mx-10 pb-16">
-      <h2 className={`${playfair.className} text-[3rem] mb-5 capitalize`}>
-        Course content
-      </h2>
+      <h2 className={`text-[3rem] mb-5 capitalize`}>Course content</h2>
       <div>
         <ul className="border border-gray-300 p-5 rounded-md">
           {data.map((d) => (

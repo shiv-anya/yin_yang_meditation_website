@@ -14,10 +14,23 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #3cb371; /* Green color */
   border-radius: 6px; /* Rounded corners */
+}
+
+html {
+  font-family: var(--font-poppins);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair_display);
 }

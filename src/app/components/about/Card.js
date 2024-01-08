@@ -2,16 +2,13 @@
 
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Playfair_Display } from "next/font/google";
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 const PageTurnAnimation = ({ name, src }) => {
   const [text, setText] = useState("");
   const textRef = useRef();
   const headingRef = useRef();
   const paraRef = useRef();
-  const headingStyles = `${playfair.classname} text-[3rem] text-primary`;
+  const headingStyles = `text-[3rem] text-primary`;
   const handleHoverStart = () => {
     // Add logic to handle the start of the hover animation if needed
     setText(
