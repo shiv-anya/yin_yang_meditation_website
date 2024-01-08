@@ -1,8 +1,5 @@
-import { Playfair_Display } from "next/font/google";
 import React from "react";
 import Button from "../components/Button";
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export const metadata = {
   title: "Yin & Yang | Meditation and Wellness",
@@ -11,11 +8,11 @@ export const metadata = {
 
 const Page = () => {
   return (
-    <section className="h-auto bg-tertiary pt-24 pb-24">
-      <div className="w-[90%] mx-auto flex">
-        <div className="flex-1 border-r-2 border-r-gray-300 p-10">
+    <section className="h-auto bg-tertiary pt-24 pb-24 max-sm:py-10">
+      <div className="w-[90%] mx-auto flex max-lg:flex-col">
+        <div className="flex-1 border-r-2 border-r-gray-300 p-10 max-lg:border-0 max-sm:p-0">
           <h2
-            className={`${playfair.className} leading-[60px] text-[3rem] text-center capitalize mb-10`}
+            className={`leading-[60px] text-[3rem] text-center capitalize mb-10 max-lg:text-left max-sm:mb-5`}
           >
             Want a demo class? Visit Us!
           </h2>
@@ -29,9 +26,9 @@ const Page = () => {
           </div>
           <div className="w-full bg-blue-200 h-[200px] mt-5 relative"></div>
         </div>
-        <div className="flex-1 flex flex-col p-10">
+        <div className="flex-1 flex flex-col p-10 max-sm:p-0 max-sm:pt-8">
           <h2
-            className={`${playfair.className} leading-[60px] text-[3rem] capitalize text-center mb-10`}
+            className={`leading-[60px] text-[3rem] capitalize text-center mb-10 max-lg:text-left max-sm:mb-5`}
           >
             Any Doubt? Contact us!
           </h2>
