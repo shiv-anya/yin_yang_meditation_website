@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="lg:hidden max-lg:visible max-sm:visible">
           <FaBarsStaggered
             onClick={toggleSidebar}
-            className="fill-secondary text-[1.7rem]"
+            className="fill-secondary max-lg:text-[2.4rem] max-sm:text-[2rem]"
           />
           <SideNavbar isOpen={isSidebarOpen} onClose={toggleSidebar} />
         </div>
