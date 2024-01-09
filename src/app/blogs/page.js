@@ -9,17 +9,17 @@ export const metadata = {
 
 const Card = ({ title, src }) => {
   return (
-    <article className="bg-white flex h-[90vh] rounded-lg odd:flex-row-reverse">
+    <article className="bg-white flex h-[90vh] rounded-lg max-lg:flex-col max-lg:flex-col-reverse max-lg:h-[150vh] lg:odd:flex-row-reverse">
       <div className="flex-1 p-10 flex flex-col justify-between">
         <h2 className={`text-[2rem]`}>{title}</h2>
-        <div>
+        <div className="max-lg:my-5">
           <h3 className="text-[1.7rem]">Blog Description</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi
             officiis libero repellendus omnis? Amet?
           </p>
         </div>
-        <div>
+        <div className="mb-5">
           <h4 className="font-bold">Key Concepts</h4>
           <ul>
             <li className="flex items-center">
@@ -51,7 +51,7 @@ const Card = ({ title, src }) => {
           fill
           alt="woman doing yoga"
           src={src}
-          className="object-cover even:rounded-r-lg"
+          className="object-cover even:rounded-r-lg object-center"
         />
       </div>
     </article>
@@ -61,11 +61,11 @@ const Card = ({ title, src }) => {
 const Page = () => {
   return (
     <section className="bg-tertiary">
-      <h1 className={`text-[3rem] py-16 mx-16`}>
-        Explore Our Mindful Living Blogs
-      </h1>
       <div>
         <div className="w-[90%] mx-auto flex flex-col gap-16">
+          <h1 className={`text-[3rem] pt-16 max-md:text-[2.4rem]`}>
+            Explore Our Mindful Living Blogs
+          </h1>
           <Card
             src="/home/course/course.jpg"
             title="Mindful Living Mastery: A Holistic Approach to Well-Being"
