@@ -7,8 +7,10 @@ const ParallaxHeading = ({ title, src }) => {
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center z-0 bg-fixed rounded-md"
         style={{ backgroundImage: `url(${src})` }}
       ></div>
-      <div className="relative z-10 flex items-center justify-center h-full bg-overlay rounded-t-md">
-        <h1 className={`text-white text-center text-[3rem] font-bold`}>
+      <div className="relative z-10 flex items-center justify-center h-full bg-overlay rounded-t-md px-10">
+        <h1
+          className={`text-white text-center text-[3rem] font-bold max-md:text-[2.4rem]`}
+        >
           {title}
         </h1>
       </div>

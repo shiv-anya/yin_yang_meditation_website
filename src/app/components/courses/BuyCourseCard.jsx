@@ -22,7 +22,7 @@ export default function BuyCourseCard() {
       "bg-tertiary text-[#333] flex-1 py-4 px-6 rounded-t-md";
   };
   return (
-    <div className="w-[35%] rounded-md shadow-card">
+    <div className="w-[35%] rounded-md shadow-card max-lg:w-full max-lg:my-16">
       <div className="flex bg-tertiary">
         <button
           className="flex-1 py-4 px-6 bg-secondary text-white rounded-t-md"

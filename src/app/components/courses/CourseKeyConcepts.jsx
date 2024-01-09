@@ -3,7 +3,7 @@ import React from "react";
 export default function CourseKeyConcepts({ data }) {
   return (
     <div>
-      <h2 className={`text-[3rem] mb-5`}>Key Concepts</h2>
+      <h2 className={`text-[3rem] mb-5 max-md:text-[2.4rem]`}>Key Concepts</h2>
       <ul>
         {data.map((d) => (
           <li key={d} className="flex items-center">
