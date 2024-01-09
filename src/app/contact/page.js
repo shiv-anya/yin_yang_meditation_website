@@ -12,7 +12,7 @@ const Page = () => {
       <div className="w-[90%] mx-auto flex max-lg:flex-col">
         <div className="flex-1 border-r-2 border-r-gray-300 p-10 max-lg:border-0 max-sm:p-0">
           <h2
-            className={`leading-[60px] text-[3rem] text-center capitalize mb-10 max-lg:text-left max-sm:mb-5`}
+            className={`leading-[60px] text-[3rem] text-center capitalize mb-10 max-lg:text-left max-sm:mb-5 max-md:text-[2.4rem]`}
           >
             Want a demo class? Visit Us!
           </h2>
@@ -28,7 +28,7 @@ const Page = () => {
         </div>
         <div className="flex-1 flex flex-col p-10 max-sm:p-0 max-sm:pt-8">
           <h2
-            className={`leading-[60px] text-[3rem] capitalize text-center mb-10 max-lg:text-left max-sm:mb-5`}
+            className={`leading-[60px] text-[3rem] capitalize text-center mb-10 max-lg:text-left max-sm:mb-5 max-md:text-[2.4rem]`}
           >
             Any Doubt? Contact us!
           </h2>
