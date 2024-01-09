@@ -62,8 +62,8 @@ const Page = () => {
   return (
     <section className="bg-tertiary">
       <div>
-        <div className="w-[90%] mx-auto flex flex-col gap-16">
-          <h1 className={`text-[3rem] pt-16 max-md:text-[2.4rem]`}>
+        <div className="w-[90%] mx-auto flex flex-col gap-16 max-md:gap-8">
+          <h1 className={`text-[3rem] pt-16 max-md:text-[2.4rem] max-md:pt-5`}>
             Explore Our Mindful Living Blogs
           </h1>
           <Card
