@@ -4,7 +4,7 @@ import Button from "../Button";
 
 export default function Reviews() {
   return (
-    <section className="p-16 h-[120vh] flex pb-32 max-sm:flex-col max-sm:p-0 max-sm:flex-col-reverse max-sm:p-0 max-sm:h-[80vh] max-sm:mt-[-250px]">
+    <section className="p-16 h-[120vh] flex pb-32 max-sm:flex-col max-sm:p-0 max-sm:flex-col-reverse max-sm:p-0 max-sm:h-[100vh] max-sm:mt-[-250px] max-xs:h-[130vh]">
       <div className="h-[90%] w-[30%] flex flex-col justify-between max-sm:w-[90%] max-sm:mx-auto max-sm:h-[25%]">
         <h2
           className={`capitalize text-[3rem] leading-[60px] max-sm:text-[2.4rem] max-sm:leading-[40px]`}
@@ -20,7 +20,7 @@ export default function Reviews() {
         </Button>
       </div>
       <div className="h-full w-[80%] ml-32 flex justify-evenly max-lg:ml-16 max-sm:w-[90%] max-sm:h-[50%] max-sm:mx-auto">
-        <div className="w-[20%] h-[40%] self-center relative rounded-md max-sm:h-[30%] max-sm:self-center">
+        <div className="w-[20%] h-[40%] self-center relative rounded-md max-sm:h-[30%] max-sm:self-center bg-blue-300">
           <Image
             src="/home/reviews/user-1.jpg"
             alt="student"
@@ -29,8 +29,8 @@ export default function Reviews() {
           />
         </div>
         <div className="w-[50%] flex flex-col gap-[10px]">
-          <div className="h-[50%] flex justify-evenly">
-            <div className="relative w-[70%] h-full max-sm:h-[70%] max-sm:self-end">
+          <div className="h-[50%] flex justify-evenly max-sm:gap-2">
+            <div className="relative w-[70%] h-full max-sm:h-[70%] max-sm:self-end bg-blue-300">
               <Image
                 src="/home/reviews/user-2.jpg"
                 alt="student"
@@ -40,9 +40,9 @@ export default function Reviews() {
             </div>
             <div className="bg-secondary h-[100px] w-[80px] self-end rounded-md"></div>
           </div>
-          <div className="h-[50%] flex justify-evenly max-sm:h-[30%]">
+          <div className="h-[50%] flex justify-evenly max-sm:h-[30%] max-sm:gap-2">
             <div className="bg-secondary h-[100px] w-[80px] rounded-md"></div>
-            <div className="relative w-[70%] h-full rounded-md">
+            <div className="relative w-[70%] h-full rounded-md bg-blue-300">
               <Image
                 src="/home/reviews/user-3.jpg"
                 alt="student"
@@ -52,7 +52,7 @@ export default function Reviews() {
             </div>
           </div>
         </div>
-        <div className="w-[25%] relative h-[50%] self-center rounded-md max-sm:h-[30%] max-sm:self-center">
+        <div className="w-[25%] relative h-[50%] self-center rounded-md max-sm:h-[30%] max-sm:self-center bg-blue-300">
           <Image
             src="/home/reviews/user-4.jpg"
             alt="student"

@@ -4,9 +4,13 @@ import { FaFacebook, FaGoogle, FaTwitter, FaYoutube } from "react-icons/fa6";
 
 export default function Newsletter() {
   return (
-    <section className="h-[85vh] py-36 flex flex-col items-center justify-evenly max-sm:w-[90%] max-sm:mx-auto max-sm:pb-32">
-      <h2 className={`text-[3rem] capitalize`}>Subscribe to newsletter</h2>
-      <p className="text-lg">
+    <section className="h-[85vh] py-36 flex flex-col items-center justify-evenly  max-sm:pb-32 max-sm:pt-32 max-sm:w-[90%] max-sm:mx-auto max-sm:flex-none">
+      <h2
+        className={`text-[3rem] capitalize max-md:text-[2rem] max-sm:text-center`}
+      >
+        Subscribe to newsletter
+      </h2>
+      <p className="text-lg max-sm:text-center">
         Stay connected to serenity. Subscribe for monthly mindfulness.
       </p>
       <div className="w-full flex justify-center mt-10 max-sm:flex-col">
